@@ -1,6 +1,6 @@
 # asdf-warn
 
-In the case where COMPILE-FILE does well enough to produce a binary but gets warnings more serious than style warnings, you may want the behavior to be consistent on all Common Lisp implementations.
+In the CASE where COMPILE-FILE does well enough to produce a binary but gets warnings more serious than style warnings, you may want the behavior to be consistent on all Common Lisp implementations.
 
 One application of this would be in a Continuous Integration system running builds. Having the parameter differ between Lisps simply gets in the way of the uniformity that Common Lisp is intended to bring about, at least in this fairly specialized situation.
 
