@@ -2,7 +2,7 @@
 (defconstant *exit-failure-value* 1)
 (defvar *basedir*
   (make-pathname
-   :defaults *load-pathname*
+   :defaults *load-truename*
    :name nil
    :type nil
    ::version nil))
