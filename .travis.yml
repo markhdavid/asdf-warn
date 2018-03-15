@@ -7,6 +7,7 @@ env:
     - ROSWELL_INSTALL_DIR=$HOME/.roswell
   matrix:
     - LISP=ccl-bin
+    - LISP=sbcl-bin
 
 install:
   - curl -L https://raw.githubusercontent.com/snmsts/roswell/release/scripts/install-for-ci.sh | sh
@@ -14,5 +15,3 @@ install:
 
 script:
   - ros --load ./ci-test-1.lisp
-  
-
