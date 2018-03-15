@@ -14,4 +14,3 @@ install:
 
 script:
   - ros -e '(ql:quickload :asdf-warn) (uiop:quit 0)'
-  - ros -e '(ql:quickload :cosi-test) (uiop:quit 0)'
