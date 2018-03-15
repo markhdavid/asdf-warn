@@ -5,8 +5,6 @@ env:
   global:
     - PATH=~/.roswell/bin:$PATH
     - ROSWELL_INSTALL_DIR=$HOME/.roswell
-    - SUCCESS_RESULT=0
-    - ERROR_RESULT=1
   matrix:
     - LISP=ccl-bin
 
@@ -15,4 +13,6 @@ install:
   - ros install lisp-unit
 
 script:
-  - ros -e '(uiop:quit $SUCCESS_RESULT)'
+  - ros --load ./ci-test-1.lisp
+  
+
