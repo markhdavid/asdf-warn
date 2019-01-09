@@ -9,7 +9,7 @@
 
 #-asdf3.1 
 (cerror "Continue anyhow" 
-        "This Lisp seems not to be running a supported version of ASDF.")
+        "This Lisp seems not to be running a supported version of ASDF (#-asdf3.1).")
 
 
 
